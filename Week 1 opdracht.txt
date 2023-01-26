@@ -1,0 +1,52 @@
+1. Het is een veel gebruikte scripttaal (*) om webpagina’s meer levendig en interactief te maken.
+2. je gebruikt javaScript om de elementen van html en css te veranderen.
+4. Een Webapplicatie of Web App is een toepassing die werkt op basis van een webbrowser
+5. javaScript ES 6 / ES2015  
+6. een <script> sectie
+7. een nummer of woorden
+8. een value is een opgeslage waarde
+9. een naam om een variabele de definieren
+11. Een algemeen standaard, voor javaScript is dat dat je variabelen 
+12. A.
+13. d.
+14. wanneer de compiler de regel niet begrijpt
+15. wanneer het programma de variabele niet kan vinden
+16. syntax is een mistype van de line, een sematische fout is een mistype in variabele
+17. een datatype is een soort om een variabele op te slaan
+18. wanneer je een stuk code wilt weg hebben maar niet wilt verwijderen of wanneer je iets erbij wilt zetten
+19. "herder" is een eigen string en wordt zo uitgeprint, herder wordt dan de variabel herder opgeroepen
+20. Legacy problemen zijn problemen die al bekent zijn maar wat geaccepteerd wordt
+21. a-3
+b-1
+c-2
+22. Ja, want het is gewoon een woord.
+23 Ja, want het is een geaccepteerd keyword\
+24 een operator wordt gebruikt om bewerkingen uit te voeren met variabelen.
+25. een '=' declareert een variabel, een '==' vergelijkt het met iets anders
+26. 20
+27. 75
+28. false
+29. -10
+30. false
+31. false
+32. true
+33. -10
+34. 6
+35. 75
+36. 6
+37. wat er als eerste moet komen en wat daarna
+38. 11
+39. 14
+40. assignment
+
+1. een String is een variabel met woorden
+2. const, let
+3. Jorn is stupid
+4. Jorn is briljant
+5. Hello ${firstName2}
+6. am is niet een variabel
+7. boolean
+8. Dingen waardoor je je code kunt testen
+9. als het werkt dan krijg je een output, anders gebeurt er niks
+1. convesion is het veranderen van het soort variable
+2. 

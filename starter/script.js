@@ -83,6 +83,20 @@ let x, y;
 x = y = 25-10-5;
 console.log(x,y);
 
-
+const beta = "test";
 const averageAge = (ageYarno + ageFaith) / 2;
 console.log(ageFaith, ageYarno, averageAge)
+
+
+let numberOne = 5;
+console.log(++numberOne);
+let numberTwo = 15;
+const result = numberOne -= numberTwo;
+console.log(result);
+
+const firstName2 = "Jorn";
+const briljant = "briljant";
+
+const result2 = "Hello ${firstName2}";
+console.log(result2);
+
