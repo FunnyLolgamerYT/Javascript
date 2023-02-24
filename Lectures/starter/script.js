@@ -32,3 +32,10 @@ console.log(population);
 console.log(population > 6000000);
 console.log(population > 33000000);
 const description = "Portugal is in Europe, and its 11 million people speak portugese";
+
+let x;
+if (x) {
+    console.log("Waar!");
+} else {
+    console.log("Niet waar!");
+}

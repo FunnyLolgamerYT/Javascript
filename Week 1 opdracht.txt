@@ -48,5 +48,17 @@ c-2
 7. boolean
 8. Dingen waardoor je je code kunt testen
 9. als het werkt dan krijg je een output, anders gebeurt er niks
-1. convesion is het veranderen van het soort variable
+
+1. convesion is het veranderen van het soort variable met een lijn, coercion is het veranderen van een variabel met een operator
 2. 
+3.
+4. 43
+5. -12
+6. 2512
+7. 37
+8. 5512
+9. 22
+10. 5512
+11. iets dat uitkomt als false.
+12. iets dat uitkomt als True.
+13. Niet waar.
