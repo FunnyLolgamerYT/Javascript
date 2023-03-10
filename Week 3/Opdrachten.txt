@@ -1,0 +1,51 @@
+1. When you use strict mode in JavaScript, you are opting in to a set of constraints that were designed to prevent certain types of mistakes and ambiguities that can arise in the language. 
+2. boven de code die je strict wil hebben
+3. Zodat je minder fouten kan maken en meer overzichtelijke errors krijgt
+4. een set task die wordt gedaan iedere keer dat ie wordt opgeroepen.
+5. een variabele is een waarde, een functie is een stuk uitvoerende code
+6. het gedeelte van de functie waar de code inzit
+function addNumbers(a, b) {
+   let sum = a + b;
+   return sum;
+}
+7. 
+1 - b
+2 - c
+3 - d
+4 - d
+5 - e
+6 - a
+
+8. niks
+9. Cheese
+10. Cheese
+Cheese
+11. je krijgt 3 knuffels van mij <3
+12. je krijgt 12 knuffels van mij <3
+13. Je krijgt 1 knuffel van mij <3 
+14. je krijgt 12 knuffels van mij <3
+15.
+Je krijgt 12 knuffels van mij <3
+extra Knuffels!
+16. Je krijgt 12 knuffels van mij <3
+17. niks
+18. 4
+19. 
+4
+4
+20. 8
+21. 20
+22. wanner het return gebruikt
+23. 4
+24. function declaration heeft een naam, function expressing niet.
+function myFunction() //function decleration {
+  // function body
+}
+const myFunction = function() //function expression{
+  // function body
+};
+25. een parameter zit in de functie, een argument wordt gebruikt bij het roepen van een functie
+26. Arrow functions hoeven geen function tag te hebben en hoeven geen {} te hebben wanneer er maar 1 line van code is.
+27. omdat het een arrow gebruikt om de code te definen.
+28. een arrow function is anonymous, dat betekent dat de functie geen naam is maar is verbonden aan een variabele.
+29. 
