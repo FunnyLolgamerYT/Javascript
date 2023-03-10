@@ -1,4 +1,5 @@
-function power(base, exponent) {
-    return result = base ** exponent;
+const sentance = (name, job, state) => {
+    const sentance = `${name} works as a ${job} and ${name} is very ${state}`;
+    console.log(sentance)
 }
-console.log(power(2,2));
+sentance('henk','teacher')

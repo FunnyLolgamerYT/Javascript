@@ -48,4 +48,9 @@ const myFunction = function() //function expression{
 26. Arrow functions hoeven geen function tag te hebben en hoeven geen {} te hebben wanneer er maar 1 line van code is.
 27. omdat het een arrow gebruikt om de code te definen.
 28. een arrow function is anonymous, dat betekent dat de functie geen naam is maar is verbonden aan een variabele.
-29. 
+29. 5
+30. 8
+31. 34
+32. Henk works as a Teacher and henk is very happy
+33. Frits works as a Developer and Frits is very happy
+34. henk works as a teacher and henk is very undefined
