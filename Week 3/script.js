@@ -1,5 +1,9 @@
-const sentance = (name, job, state) => {
-    const sentance = `${name} works as a ${job} and ${name} is very ${state}`;
-    console.log(sentance)
+const animals = ['Fox', 'Cow', 'Sheep', 'Pig', 'Dog', 'Cat'];
+if (animals.includes('Fox')){
+    console.log('Great!')
+    animals.unshift('Tiger');
+    console.log(animlLegalCheck(animals[0]));
 }
-sentance('henk','teacher')
+function animlLegalCheck(animal) {
+    return animals.includes(animal);
+}

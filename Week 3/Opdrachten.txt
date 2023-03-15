@@ -54,3 +54,58 @@ const myFunction = function() //function expression{
 32. Henk works as a Teacher and henk is very happy
 33. Frits works as a Developer and Frits is very happy
 34. henk works as a teacher and henk is very undefined
+35. Dat je niet meerdere keren dezelfde naam gebruikt in je code zodat het er mooier uit gaat zien
+36. het stuurt de uitkomst van de variabele terug naar de opgeroepe code
+37. Omdat de code van boven naar beneden word gelezen
+
+1. Een manier om data op te slaan
+2. Een lijst aan variabelen
+3. je hoeft geen verschillende variabelen te maken voor dezelfde uitkomst
+4. b, c, d, e, f
+5. 
+6. niks
+   
+7.
+   2
+   3
+
+8. 
+   2
+   27
+9. 
+   2
+   3
+   27
+
+10. undefined
+11. Nee, de return value kan wat effecten veranderen maar hoeft niet te worden gebruikt
+12. Array(4) [ 4, 1, 2, 3 ]
+13. 5
+14. 3
+15. 8
+16. Uncaught ReferenceError: friendOne is not defined
+    <anonymous> Choo
+
+17. Array(3) [ "Henk", "Frits", "Kees" ]
+18. 
+1
+NaN
+19.
+1
+10
+20. 
+0
+1
+21. 
+true
+true
+22. 
+false
+false
+23. 
+-2
+24. 
+Great!
+true
+
+1. Een array slaat de waarden op in numerische volgorde beginnend bij 0 waarbij een object keys gebruiken
