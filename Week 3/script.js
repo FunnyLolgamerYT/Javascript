@@ -1,9 +1,14 @@
-const animals = ['Fox', 'Cow', 'Sheep', 'Pig', 'Dog', 'Cat'];
-if (animals.includes('Fox')){
-    console.log('Great!')
-    animals.unshift('Tiger');
-    console.log(animlLegalCheck(animals[0]));
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schnedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
 }
-function animlLegalCheck(animal) {
-    return animals.includes(animal);
-}
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey])
+console.log(jonas['last' + nameKey])

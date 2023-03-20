@@ -42,7 +42,7 @@ const jonasArray = [
     'teacher',
     ['Michael', 'Peter', 'Steven']
 ]
-*/
+
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schnedtmann',
@@ -75,3 +75,4 @@ jonas['twitter'] = '@jonasschnedtman'
 console.log(
     jonas.firstName, ' has',jonas.friends.length, 'friends, and his best friend is called', jonas.friends[0] 
 )
+*/

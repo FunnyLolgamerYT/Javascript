@@ -108,4 +108,8 @@ false
 Great!
 true
 
-1. Een array slaat de waarden op in numerische volgorde beginnend bij 0 waarbij een object keys gebruiken
+1. Een array slaat de waarden op in numerische volgorde beginnend bij 0 waarbij een object keywoorden gebruiken
+2. de key is de variabelenaam in een object
+3. de value is de waarde achter de key
+4. een key en een value in een object
+5. 
