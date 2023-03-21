@@ -112,4 +112,19 @@ true
 2. de key is de variabelenaam in een object
 3. de value is de waarde achter de key
 4. een key en een value in een object
-5. 
+5. een property is een van de variabelen in een object
+7. je gebruikt dot notation als je een specifieke property wilt hebben van een object en je gebruikt brackets als je meerdere dingen(zoals een variabel) wilt gebruiken om een waarde te krijgen
+8. Henk Henk
+9. de Vries
+10. undefined
+11. undefined
+12. Hello
+13. True;
+14. Henk de Vries
+15. function getFullName()
+16. Piet Janssens 
+17. 23
+18. 
+23
+23
+19. 
