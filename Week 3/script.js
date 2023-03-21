@@ -46,3 +46,7 @@ console.log(objectOne.getAge());
 console.log(objectOne.getAge());
 */
 
+//for loop keeps running while condition is true
+for(let rep = 1; rep <= 10; rep++) {
+    console.log('Lifting weights repitition ' + rep)
+}
