@@ -128,4 +128,7 @@ true
 23
 23
 
-1. 
+
+Opdrachten sectie 3 – Javascript fundamentals (part 2,
+video 42 tot en met 45)
+1. De console.log zoekt naar de lengte van de array genaamt friends in de object objectOne

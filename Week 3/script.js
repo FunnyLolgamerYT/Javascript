@@ -50,3 +50,37 @@ console.log(objectOne.getAge());
 for(let rep = 1; rep <= 10; rep++) {
     console.log('Lifting weights repitition ' + rep)
 }
+
+const objectOne = {
+    firstName: 'Henk',
+    lastName: 'de Vries',
+    age: 2021 - 1998,
+    job: 'teacher',
+    friends: ['Koe', 'Vos'],
+    getFullName: function() {
+        return `${this.firstName} ${this.lastName}`;
+    },
+};
+
+
+
+function calculateAge(day, month, year) {
+    const now = new Date();
+    const diffInMilliseconds = now - birthDate;
+    const diffInDays = diffInMilliseconds / (1000 * 60 * 60 * 24);
+    const years = Math.floor(diffInDays / 365);
+    const days = Math.floor(diffInDays % 365);
+    return `${years} years and ${days} days`;
+    
+  }
+
+  console.log(calculateAge(2006))
+
+const  = 1;
+
+  let test1 = new Date();
+  console.log(test1);
+
+function fuck {
+    const currentYear = new Date().getFullYear();
+}
