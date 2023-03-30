@@ -1,13 +1,52 @@
 let p1Scores =[];//sla hierin de gebruikte nummers op, dit zijn de nummers die beige gekleurd zijn
 let p2Scores =[];
 let rollsLeft=3; // het aantal rollen die in de header moeten staan
+let rollsLeftCounter = document.getElementById("rolls");
 let highscore=0;
 let p1Turn=true;//true voor player 1, false voor player 2
 let dice=[];//sla hierin de dobbesteen html elementen op, zodat je deze kan aanpassen via js
+const imgs = ["Images/Dice-1.png", "Images/Dice-2.png", "Images/Dice-3.png", "Images/Dice-4.png", "Images/Dice-5.png", "Images/Dice-6.png"];
+let dice1 = document.getElementById("die1");
+let dice2 = document.getElementById("die2");
+let dice3 = document.getElementById("die3");
+let dice4 = document.getElementById("die4");
+let dice5 = document.getElementById("die5");
 
-function roll(){//deze functie voert uit wanneer de speler op roll klikt
-    console.log("Roll");
+
+
+
+
+function roll() {
+    if (p1Turn && rollsLeft > 0) {
+        let rolling = 0;
+        let rollinganimation;
+        let lastValues = [];
+        let diceArray = [dice1, dice2, dice3, dice4, dice5];
+        if (rolling < 10) {
+            rollsLeft--;
+                    rollsLeftCounter.innerHTML = rollsLeft;
+            rollinganimation = setInterval(function() {
+                for (let i = 0; i < diceArray.length; i++) {
+                    
+                    let value = Math.floor(Math.random() * imgs.length);
+                    diceArray[i].setAttribute("src", imgs[value]);
+                    lastValues[i] = imgs.indexOf(imgs[value]); // Store the index of the last image for each die
+                }
+                console.log(rolling);
+                rolling++;
+                if (rolling >= 10) {
+                    clearInterval(rollinganimation);
+                    console.log(lastValues); // Log the last values of the dice
+                    
+                }
+            }, 100);
+        }
+        
+    }
 }
+
+
+
 //voorbeeld code hoe je een button interactable kan maken, zodat je deze op hold kan zetten
 /*let test = document.getElementById("die1").onclick= function(){
     console.log(this.id);
@@ -47,3 +86,9 @@ function swapTurn(){
 
 }
 //schrijf hier de rest van je code
+function rollingAnimation() {  
+    dice1.setAttribute("src", imgs[Math.floor(Math.random() * imgs.length)]) ;
+    rolling++;
+    console.log("test")
+    roll();
+}
