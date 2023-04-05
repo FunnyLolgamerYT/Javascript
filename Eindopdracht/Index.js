@@ -120,11 +120,19 @@ function single(num,dice)
 }
 /* functie die een dobbelsteen opslot zet zodat tijdens het rollen deze niet rolt*/
 function lockDie(die, dieChanger){
+    if('dice' + die == false) {
     LockedDice['dice'+ die] = true;
           console.log(LockedDice);
           LockedDice[die][0] = true;    
           console.table(LockedDice);
-          };
+          }
+         else {
+            LockedDice['dice' + die] = false;
+            console.log(LockedDice);
+            LockedDice[die][0] = true;
+            console.table(LockedDice);
+        }
+
           
 
 
