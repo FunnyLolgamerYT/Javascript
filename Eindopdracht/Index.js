@@ -11,6 +11,13 @@ let dice2 = document.getElementById("die2");
 let dice3 = document.getElementById("die3");
 let dice4 = document.getElementById("die4");
 let dice5 = document.getElementById("die5");
+let LockedDice = [
+    [false, 0, dice1],
+    [false, 0, dice2],
+    [false, 0, dice3],
+    [false, 0, dice4],
+    [false, 0, dice5]  ]
+
 
 
 
@@ -21,29 +28,35 @@ function roll() {
         let rolling = 0;
         let rollinganimation;
         let lastValues = [];
-        let diceArray = [dice1, dice2, dice3, dice4, dice5];
+        rollsLeft--;
         if (rolling < 10) {
-            rollsLeft--;
+            
                     rollsLeftCounter.innerHTML = rollsLeft;
             rollinganimation = setInterval(function() {
-                for (let i = 0; i < diceArray.length; i++) {
-                    
-                    let value = Math.floor(Math.random() * imgs.length);
-                    diceArray[i].setAttribute("src", imgs[value]);
-                    lastValues[i] = imgs.indexOf(imgs[value]); // Store the index of the last image for each die
-                }
+                
+                for (let i = 0; i < LockedDice.length; i++) {
+                    if(LockedDice[i][0] == false) {
+                        let value = Math.floor(Math.random() * imgs.length);
+                        LockedDice[i][2].setAttribute("src", imgs[value]);
+                        LockedDice[i][1] = imgs.indexOf(imgs[value]);
+                        lastValues[i] = imgs.indexOf(imgs[value]); // Store the index of the last image for each die
+                    }
+            }
                 console.log(rolling);
                 rolling++;
                 if (rolling >= 10) {
                     clearInterval(rollinganimation);
                     console.log(lastValues); // Log the last values of the dice
                     
+                    
                 }
             }, 100);
         }
         
     }
+    
 }
+
 
 
 
@@ -59,6 +72,13 @@ als de return value 0 is heb je de combinatie niet gehaald.*/
  dice is hier een array van nummers of een string gevult met nummers*/
 function nOfAKind(num,dice){ 
     let points;
+    
+    for(let i = 0; i < LockedDice.length; i++) {
+        if(LockedDice[i][1] == num) {
+            points = points + 1;
+        }
+
+    }
     return points;
 }
 //functie voor een full house
@@ -72,13 +92,23 @@ function single(num,dice)
 
 }
 /* functie die een dobbelsteen opslot zet zodat tijdens het rollen deze niet rolt*/
-function lockDie(die){
+function lockDie(die, dieChanger){
+    LockedDice['dice'+ die] = true;
+          console.log(LockedDice);
+          LockedDice[die][0] = true;    
+          console.table(LockedDice);
+          };
+          
 
-}
+
+
+
 //functie die dobbestenen bij elkaar op telt
 function calculatePoints(dice)
 {
-
+    if(LockedDice.forEach(0) == 3) {
+        console.log("test");
+      }
 }
 /*als je 2 players maakt,
  kun je deze functie maken om van ronde te wisselen.*/
@@ -86,9 +116,4 @@ function swapTurn(){
 
 }
 //schrijf hier de rest van je code
-function rollingAnimation() {  
-    dice1.setAttribute("src", imgs[Math.floor(Math.random() * imgs.length)]) ;
-    rolling++;
-    console.log("test")
-    roll();
-}
+
