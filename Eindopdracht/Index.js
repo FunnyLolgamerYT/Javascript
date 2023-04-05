@@ -17,6 +17,7 @@ let threesCounter = document.getElementById("threes--p1");
 let foursCounter = document.getElementById("fours--p1");
 let fivesCounter = document.getElementById("fives--p1");
 let sixesCounter = document.getElementById("sixes--p1");
+let fullHouseCounter = document.getElementById("fouse--p1")
 let LockedDice = [
     [false, 0, dice1],
     [false, 0, dice2],
@@ -31,11 +32,13 @@ let LockedDice = [
 
 function roll() {
     if (p1Turn && rollsLeft > 0) {
+        
         let rolling = 0;
         let rollinganimation;
         let lastValues = [];
         rollsLeft--;
         if (rolling < 10) {
+            
             
                     rollsLeftCounter.innerHTML = rollsLeft;
             rollinganimation = setInterval(function() {
@@ -46,6 +49,7 @@ function roll() {
                         LockedDice[i][2].setAttribute("src", imgs[value]);
                         LockedDice[i][1] = imgs.indexOf(imgs[value]);
                         lastValues[i] = imgs.indexOf(imgs[value]); // Store the index of the last image for each die
+                        
                     }
             }
                 console.log(rolling);
@@ -58,9 +62,8 @@ function roll() {
                 }
             }, 100);
         }
-        
+       
     }
-    
 }
 
 
@@ -87,9 +90,27 @@ function nOfAKind(num,dice){
     }
     return points;
 }
-//functie voor een full house
-function fullHouse(dice){
+
+function checker() {
+    let nummers = [];
+    for (let i = 0; i < LockedDice.length; i++) {
+      if (!nummers.includes(LockedDice[i][1])) {
+        nummers.push(LockedDice[i][1]);
+      }
+    }
+    console.log(nummers);
+    return nummers;
+  }
   
+  
+//functie voor een full house
+function fullHouse(nummers){
+    if(nummers.length == 2) {
+        fullHouseCounter.innerHTML = 25;
+    } else {
+        fullHouseCounter.innerHTML = 0;
+        }
+    
 }
 /*functie voor een single zoals, Aces, twos, threes....,
  num is het nummer waar we naar zoeken, zoals aces of twos, en dice is de combinatie van dobbel stenen als array of string*/
@@ -112,6 +133,7 @@ function lockDie(die, dieChanger){
 //functie die dobbestenen bij elkaar op telt
 function calculatePoints(dice)
 {
+    
     let diceCounts = [0,0,0,0,0,0]
 LockedDice.forEach(function(row) {
   row.forEach(function(num) {
@@ -131,6 +153,9 @@ LockedDice.forEach(function(row) {
   });
 });
 console.log(diceCounts);
+fullHouse(checker());
+
+
 
 rollsLeft = 3;
 rollsLeftCounter.innerHTML = rollsLeft;
@@ -140,6 +165,7 @@ threesCounter.innerHTML = diceCounts[2] * 3;
 foursCounter.innerHTML = diceCounts[3] * 4;
 fivesCounter.innerHTML = diceCounts[4] * 5;
 sixesCounter.innerHTML = diceCounts[5] * 6;
+
 }
 /*als je 2 players maakt,
  kun je deze functie maken om van ronde te wisselen.*/
