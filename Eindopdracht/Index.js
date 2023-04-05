@@ -11,6 +11,12 @@ let dice2 = document.getElementById("die2");
 let dice3 = document.getElementById("die3");
 let dice4 = document.getElementById("die4");
 let dice5 = document.getElementById("die5");
+let acesCounter = document.getElementById("aces--p1");
+let twosCounter = document.getElementById("twos--p1");
+let threesCounter = document.getElementById("threes--p1");
+let foursCounter = document.getElementById("fours--p1");
+let fivesCounter = document.getElementById("fives--p1");
+let sixesCounter = document.getElementById("sixes--p1");
 let LockedDice = [
     [false, 0, dice1],
     [false, 0, dice2],
@@ -106,9 +112,34 @@ function lockDie(die, dieChanger){
 //functie die dobbestenen bij elkaar op telt
 function calculatePoints(dice)
 {
-    if(LockedDice.forEach(0) == 3) {
-        console.log("test");
-      }
+    let diceCounts = [0,0,0,0,0,0]
+LockedDice.forEach(function(row) {
+  row.forEach(function(num) {
+    if (num === 0) {
+      diceCounts[0]++;
+    } else if (num === 1) {
+        diceCounts[1]++;
+    } else if(num === 2) {
+        diceCounts[2]++;
+    } else if(num === 3) {
+        diceCounts[3]++;
+    } else if(num === 4) {
+        diceCounts[4]++;
+    } else if(num === 5) {
+        diceCounts[5]++;
+    }
+  });
+});
+console.log(diceCounts);
+
+rollsLeft = 3;
+rollsLeftCounter.innerHTML = rollsLeft;
+acesCounter.innerHTML = diceCounts[0];
+twosCounter.innerHTML = diceCounts[1] * 2;
+threesCounter.innerHTML = diceCounts[2] * 3;
+foursCounter.innerHTML = diceCounts[3] * 4;
+fivesCounter.innerHTML = diceCounts[4] * 5;
+sixesCounter.innerHTML = diceCounts[5] * 6;
 }
 /*als je 2 players maakt,
  kun je deze functie maken om van ronde te wisselen.*/
